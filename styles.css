@@ -1,2 +1,51 @@
 
 /* Your CSS Code here. */
+/* Reset body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Centering the content on the page */
+.movie-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    background-color: #fff; /* White background for the content */
+    padding: 20px;
+}
+
+/* Styling for the movie poster */
+.moviePic {
+    height: 400px; /* Fixed height */
+    width: 300px; /* Fixed width */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.moviePic:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* Styling for the movie description */
+.movieDetail {
+    position: absolute;
+    top: 50%; /* Vertically centered */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    width: 80%; /* Control the width of the text */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Set font size */
+    line-height: 1.5; /* Better readability */
+    color: #333; /* Dark gray text */
+    max-width: 600px; /* Maximum width for the description */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    color: #fff; /* White text for readability */
+}
